@@ -1,0 +1,208 @@
+{% extends './partials/layout1.html' %}
+
+{% block content %}
+<!-- Main Wrapper Start -->
+<main class="main-wrapper">
+    <!-- Hero Section -->
+    <div class="bg-black py-[60px] lg:py-[100px]">
+        <div class="container">
+            <div class="text-center text-colorButteryWhite">
+                <h1 class="mb-[15px]">Our Success Stories</h1>
+                <p class="text-lg md:text-xl">Transforming Businesses Across Industries</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Case Studies -->
+    <section class="py-20 bg-colorIvory">
+        <div class="container">
+            <!-- Sports & Entertainment -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold mb-12">Sports & Entertainment Partnerships</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <!-- Dallas Cowboys -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="aspect-w-16 aspect-h-9 relative">
+                            <img src="/static/img/partnerships/cowboys-coach.jpeg" alt="Dallas Cowboys Partnership" class="object-cover w-full h-full"/>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-4">Dallas Cowboys Collaboration</h3>
+                            <p class="mb-6">Strategic partnership focusing on business development and community engagement initiatives.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-primary text-white rounded-full text-sm">Sports Business</span>
+                                <span class="px-3 py-1 bg-primary text-white rounded-full text-sm">Strategic Planning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Texas Rangers -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="aspect-w-16 aspect-h-9 relative">
+                            <img src="/static/img/partnerships/rangers.jpeg" alt="Texas Rangers Partnership" class="object-cover w-full h-full"/>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-4">Texas Rangers Initiative</h3>
+                            <p class="mb-6">Developing innovative business solutions and community programs with the Texas Rangers organization.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-primary text-white rounded-full text-sm">Community Impact</span>
+                                <span class="px-3 py-1 bg-primary text-white rounded-full text-sm">Business Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Success Stories -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold mb-12">Business Transformation Stories</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Case Study 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="aspect-w-16 aspect-h-9 relative">
+                            <img src="/static/img/success/business-growth.jpeg" alt="Business Growth Case Study" class="object-cover w-full h-full"/>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-4">From Startup to Success</h3>
+                            <p class="mb-4">Guided a local startup to achieve 300% growth in 12 months through strategic planning and automation.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-primary text-white rounded-full text-sm">Startup Growth</span>
+                                <span class="px-3 py-1 bg-primary text-white rounded-full text-sm">Automation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="aspect-w-16 aspect-h-9 relative">
+                            <img src="/static/img/success/digital-transformation.jpeg" alt="Digital Transformation" class="object-cover w-full h-full"/>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-4">Digital Revolution</h3>
+                            <p class="mb-4">Transformed a traditional business into a digital powerhouse, increasing efficiency by 200%.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-primary text-white rounded-full text-sm">Digital Transformation</span>
+                                <span class="px-3 py-1 bg-primary text-white rounded-full text-sm">Innovation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="aspect-w-16 aspect-h-9 relative">
+                            <img src="/static/img/success/funding-success.jpeg" alt="Funding Success" class="object-cover w-full h-full"/>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-4">Funding Success</h3>
+                            <p class="mb-4">Secured $2M in funding for a tech startup through strategic planning and pitch development.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-primary text-white rounded-full text-sm">Funding</span>
+                                <span class="px-3 py-1 bg-primary text-white rounded-full text-sm">Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community Impact -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold mb-12">Community Impact Initiatives</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Education Initiative -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="aspect-w-16 aspect-h-9 relative">
+                            <img src="/static/img/community/lamplighter.jpeg" alt="Education Initiative" class="object-cover w-full h-full"/>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-4">Youth Education Program</h3>
+                            <p class="mb-6">Empowering the next generation through financial literacy and entrepreneurship education at Lamplighter Academy.</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center gap-2">
+                                    <span class="text-primary">✓</span>
+                                    <span>200+ Students Mentored</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="text-primary">✓</span>
+                                    <span>15 Student-Led Businesses Launched</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Cultural Leadership -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="aspect-w-16 aspect-h-9 relative">
+                            <img src="/static/img/community/philippine-chamber.jpeg" alt="Cultural Leadership" class="object-cover w-full h-full"/>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-4">Cultural Business Leadership</h3>
+                            <p class="mb-6">Partnering with the Philippine Chamber of Commerce to foster international business relationships and growth.</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center gap-2">
+                                    <span class="text-primary">✓</span>
+                                    <span>50+ Businesses Supported</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="text-primary">✓</span>
+                                    <span>International Partnership Development</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold text-center mb-12">Client Testimonials</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="flex items-center mb-6">
+                            <img src="/static/img/testimonials/client1.jpeg" alt="Client Testimonial" class="w-16 h-16 rounded-full mr-4"/>
+                            <div>
+                                <h4 class="font-bold">Michael Rodriguez</h4>
+                                <p class="text-gray-600">Tech Startup Founder</p>
+                            </div>
+                        </div>
+                        <p class="italic">"RJ Business Solutions transformed our startup from an idea into a thriving business. Their strategic guidance was invaluable."</p>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="flex items-center mb-6">
+                            <img src="/static/img/testimonials/client2.jpeg" alt="Client Testimonial" class="w-16 h-16 rounded-full mr-4"/>
+                            <div>
+                                <h4 class="font-bold">Sarah Chen</h4>
+                                <p class="text-gray-600">Small Business Owner</p>
+                            </div>
+                        </div>
+                        <p class="italic">"The automation solutions they implemented saved us countless hours and dramatically improved our efficiency."</p>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="flex items-center mb-6">
+                            <img src="/static/img/testimonials/client3.jpeg" alt="Client Testimonial" class="w-16 h-16 rounded-full mr-4"/>
+                            <div>
+                                <h4 class="font-bold">James Thompson</h4>
+                                <p class="text-gray-600">Nonprofit Director</p>
+                            </div>
+                        </div>
+                        <p class="italic">"Their commitment to community impact and business excellence has made them an invaluable partner in our growth."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="bg-black text-white rounded-lg shadow-lg p-12 text-center">
+                <h2 class="text-3xl font-bold mb-6">Ready to Write Your Success Story?</h2>
+                <p class="text-lg mb-8">Join our growing list of successful partnerships</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                    <a href="tel:945-308-8003" class="btn-primary px-8 py-4">Call (945) 308-8003</a>
+                    <a href="mailto:rickjefferson@rickjeffersonsolutions.com" class="btn-secondary px-8 py-4">Schedule Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %} 

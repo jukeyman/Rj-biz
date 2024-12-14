@@ -1,0 +1,153 @@
+{% extends '../partials/layout1.html' %}
+
+{% block content %}
+<!-- Main Wrapper Start -->
+<main class="main-wrapper">
+    <!-- Hero Section -->
+    <div class="bg-black py-[60px] lg:py-[100px]">
+        <div class="container">
+            <div class="text-center text-colorButteryWhite">
+                <h1 class="mb-[15px]">Our Leadership Team</h1>
+                <p class="text-lg md:text-xl">Meet the experts behind RJ Business Solutions' success</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leadership Team Section -->
+    <section class="py-20 bg-colorIvory">
+        <div class="container">
+            <!-- Core Leadership -->
+            <div class="mb-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Rick Jefferson -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="aspect-w-16 aspect-h-9 relative">
+                            <img src="/static/img/team/rick.jpg" alt="Rick Jefferson" class="object-cover w-full h-full"/>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-2">Rick Jefferson</h3>
+                            <p class="text-primary text-lg mb-4">Founder & CEO</p>
+                            <div class="space-y-4 mb-6">
+                                <p>A visionary leader in AI innovation and business technology, Rick has pioneered quantum-agent technologies and developed over 30 market-leading applications. His expertise in prompt engineering and strategic consulting has helped transform hundreds of businesses.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">AI Innovation</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Strategic Leadership</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Technology</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="https://linkedin.com" class="text-primary hover:text-black transition-colors">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                </a>
+                                <a href="https://twitter.com" class="text-primary hover:text-black transition-colors">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Angel Lewis-Jefferson -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="aspect-w-16 aspect-h-9 relative">
+                            <img src="/static/img/team/angel.jpg" alt="Angel Lewis-Jefferson" class="object-cover w-full h-full"/>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-2">Angel Lewis-Jefferson</h3>
+                            <p class="text-primary text-lg mb-4">Co-Founder & Majority Owner</p>
+                            <div class="space-y-4 mb-6">
+                                <p>A powerhouse in business development and operations, Angel has helped form over 300 successful businesses. Her expertise in business planning, grant writing, and HR solutions has been instrumental in securing millions in funding for clients.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Business Formation</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Grant Writing</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Operations</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="https://linkedin.com" class="text-primary hover:text-black transition-colors">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                </a>
+                                <a href="https://twitter.com" class="text-primary hover:text-black transition-colors">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
+                <div class="text-center p-8 bg-white rounded-lg shadow-lg">
+                    <div class="text-4xl font-bold text-primary mb-2">300+</div>
+                    <div class="text-lg">Businesses Launched</div>
+                </div>
+                <div class="text-center p-8 bg-white rounded-lg shadow-lg">
+                    <div class="text-4xl font-bold text-primary mb-2">30+</div>
+                    <div class="text-lg">AI Applications</div>
+                </div>
+                <div class="text-center p-8 bg-white rounded-lg shadow-lg">
+                    <div class="text-4xl font-bold text-primary mb-2">#9</div>
+                    <div class="text-lg">Global Ranking</div>
+                </div>
+                <div class="text-center p-8 bg-white rounded-lg shadow-lg">
+                    <div class="text-4xl font-bold text-primary mb-2">98%</div>
+                    <div class="text-lg">Client Satisfaction</div>
+                </div>
+            </div>
+
+            <!-- Our Values -->
+            <div class="text-center mb-20">
+                <h2 class="text-3xl font-bold mb-16">Our Core Values</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Innovation</h3>
+                        <p>Pushing boundaries with cutting-edge solutions</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Excellence</h3>
+                        <p>Delivering exceptional results every time</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Efficiency</h3>
+                        <p>Optimizing processes for maximum impact</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Partnership</h3>
+                        <p>Growing together with our clients</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Join Us CTA -->
+            <div class="bg-white rounded-lg shadow-lg p-12 text-center">
+                <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Business?</h2>
+                <p class="text-lg mb-8">Join the hundreds of businesses we've helped succeed. Schedule your consultation today.</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="{{ url_for('contact') }}" class="btn-primary px-8 py-4">Book a Consultation</a>
+                    <a href="{{ url_for('services') }}" class="btn-secondary px-8 py-4">View Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Sitemap: https://rickjeffersonsolutions.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /includes/
+
+# Allow search engines to crawl static assets
+Allow: /static/css/
+Allow: /static/js/
+Allow: /static/img/

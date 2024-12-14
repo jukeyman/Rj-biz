@@ -1,0 +1,282 @@
+{% extends './partials/layout1.html' %}
+
+{% block title %}Business Services | RJ Business Solutions McKinney TX{% endblock %}
+
+{% block meta_description %}Comprehensive business services including formation, credit repair, automation, and consulting in McKinney, TX. Expert solutions for business growth.{% endblock %}
+
+{% block meta_keywords %}business formation McKinney, credit repair services, business automation Texas, business consulting DFW, Rick Jefferson business services{% endblock %}
+
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Business Services",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "RJ Business Solutions"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Business Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Business Formation",
+          "description": "Complete business setup and formation services including LLC formation, documentation, and compliance.",
+          "url": "https://rickjeffersonsolutions.com/services#business-formation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Credit Repair",
+          "description": "Professional credit repair and improvement services for individuals and businesses.",
+          "url": "https://rickjeffersonsolutions.com/services#credit-repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Business Automation",
+          "description": "Custom automation solutions to improve business efficiency and productivity.",
+          "url": "https://rickjeffersonsolutions.com/services#automation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Business Consulting",
+          "description": "Strategic business consulting and growth planning services.",
+          "url": "https://rickjeffersonsolutions.com/services#consulting"
+        }
+      }
+    ]
+  }
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- Main Wrapper Start -->
+<main class="main-wrapper">
+    <!-- Page Title Start -->
+    <div class="bg-black py-[60px] lg:py-[100px]">
+        <div class="container">
+            <div class="text-center text-colorButteryWhite">
+                <h1 class="mb-[15px]">Complete Business Solutions</h1>
+                <p class="text-lg md:text-xl">Your One-Stop Partner for Business Success</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section Start -->
+    <section class="section-service py-20" id="services">
+        <div class="container">
+            <!-- Business Formation & Setup -->
+            <div class="service-block mb-20" id="business-formation">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-bold mb-8">Business Formation & Setup</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <p class="mb-6">Start your business journey with confidence. We handle everything from formation to complete business setup, ensuring you're ready to operate successfully from day one.</p>
+                            <h3 class="text-xl font-bold mb-4">Services Include:</h3>
+                            <ul class="list-disc pl-6 mb-6 space-y-2">
+                                <li>LLC & Corporation Formation</li>
+                                <li>Business Documentation</li>
+                                <li>EIN & Tax Registration</li>
+                                <li>Compliance Setup</li>
+                                <li>Bank Account Setup</li>
+                                <li>Merchant Account Setup</li>
+                            </ul>
+                            <a href="{{ url_for('contact') }}" class="btn-primary inline-block px-6 py-3 mt-4">Get Started</a>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold mb-4">Key Benefits:</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Professional Guidance</li>
+                                <li>Quick Formation Process</li>
+                                <li>Complete Legal Compliance</li>
+                                <li>Business Banking Solutions</li>
+                                <li>Payment Processing Setup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Plans & Documentation -->
+            <div class="service-block mb-20" id="business-plans">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-bold mb-8">Business Plans & Documentation</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <p class="mb-6">Professional business plans and documentation services to help you secure funding, plan your strategy, and establish solid business foundations.</p>
+                            <h3 class="text-xl font-bold mb-4">Services Include:</h3>
+                            <ul class="list-disc pl-6 mb-6 space-y-2">
+                                <li>Comprehensive Business Plans</li>
+                                <li>Financial Projections</li>
+                                <li>Market Analysis</li>
+                                <li>Operational Plans</li>
+                                <li>Grant Proposals</li>
+                                <li>Business Documentation</li>
+                            </ul>
+                            <a href="{{ url_for('contact') }}" class="btn-primary inline-block px-6 py-3 mt-4">Learn More</a>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold mb-4">Key Benefits:</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Funding Ready Documentation</li>
+                                <li>Professional Presentation</li>
+                                <li>Strategic Planning</li>
+                                <li>Clear Business Direction</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Credit & Financial Services -->
+            <div class="service-block mb-20" id="credit-repair">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-bold mb-8">Credit & Financial Services</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <p class="mb-6">Transform your financial future with our comprehensive credit repair and business credit building services. Official partner of MyFreeScoreNow.</p>
+                            <h3 class="text-xl font-bold mb-4">Services Include:</h3>
+                            <ul class="list-disc pl-6 mb-6 space-y-2">
+                                <li>Personal Credit Repair</li>
+                                <li>Business Credit Building</li>
+                                <li>Credit Monitoring</li>
+                                <li>Financial Planning</li>
+                                <li>Debt Management</li>
+                                <li>Credit Education</li>
+                            </ul>
+                            <a href="{{ url_for('contact') }}" class="btn-primary inline-block px-6 py-3 mt-4">Start Now</a>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold mb-4">Key Benefits:</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Improved Credit Scores</li>
+                                <li>Better Loan Terms</li>
+                                <li>Financial Freedom</li>
+                                <li>Business Funding Access</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HR & Payroll Solutions -->
+            <div class="service-block mb-20" id="hr-services">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-bold mb-8">HR & Payroll Solutions</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <p class="mb-6">Comprehensive HR and payroll solutions to manage your workforce effectively and ensure compliance with all regulations.</p>
+                            <h3 class="text-xl font-bold mb-4">Services Include:</h3>
+                            <ul class="list-disc pl-6 mb-6 space-y-2">
+                                <li>HR Management</li>
+                                <li>Payroll Processing</li>
+                                <li>Benefits Administration</li>
+                                <li>Employee Onboarding</li>
+                                <li>Compliance Management</li>
+                                <li>HR Documentation</li>
+                            </ul>
+                            <a href="{{ url_for('contact') }}" class="btn-primary inline-block px-6 py-3 mt-4">Get Started</a>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold mb-4">Key Benefits:</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Streamlined Operations</li>
+                                <li>Compliance Assurance</li>
+                                <li>Employee Satisfaction</li>
+                                <li>Time & Cost Savings</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology Solutions -->
+            <div class="service-block mb-20" id="custom-apps">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-bold mb-8">Technology Solutions</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <p class="mb-6">Custom technology solutions to streamline your business operations and enhance customer experience.</p>
+                            <h3 class="text-xl font-bold mb-4">Services Include:</h3>
+                            <ul class="list-disc pl-6 mb-6 space-y-2">
+                                <li>Custom App Development</li>
+                                <li>E-commerce Solutions</li>
+                                <li>Website Development</li>
+                                <li>Custom Bot Development</li>
+                                <li>Automation Solutions</li>
+                                <li>Merchant Services Integration</li>
+                            </ul>
+                            <a href="{{ url_for('contact') }}" class="btn-primary inline-block px-6 py-3 mt-4">Learn More</a>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold mb-4">Key Benefits:</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Customized Solutions</li>
+                                <li>Increased Efficiency</li>
+                                <li>Competitive Advantage</li>
+                                <li>Scalable Systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grant Services -->
+            <div class="service-block mb-20" id="grants">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-bold mb-8">Grant Services</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <p class="mb-6">Expert grant writing and management services to help you secure funding for your business growth.</p>
+                            <h3 class="text-xl font-bold mb-4">Services Include:</h3>
+                            <ul class="list-disc pl-6 mb-6 space-y-2">
+                                <li>Grant Research</li>
+                                <li>Proposal Writing</li>
+                                <li>Application Management</li>
+                                <li>Documentation Support</li>
+                                <li>Compliance Management</li>
+                                <li>Post-Award Management</li>
+                            </ul>
+                            <a href="{{ url_for('contact') }}" class="btn-primary inline-block px-6 py-3 mt-4">Get Started</a>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold mb-4">Key Benefits:</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Expert Grant Writing</li>
+                                <li>Higher Success Rates</li>
+                                <li>Complete Management</li>
+                                <li>Ongoing Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-black text-colorButteryWhite py-20">
+        <div class="container text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Business?</h2>
+            <p class="text-xl mb-8">Schedule your consultation today and let's discuss how we can help you achieve your goals.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <a href="tel:945-308-8003" class="btn-primary px-8 py-4">Call (945) 308-8003</a>
+                <a href="mailto:rickjefferson@rickjeffersonsolutions.com" class="btn-secondary px-8 py-4">Email Us</a>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

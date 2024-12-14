@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}RJ Business Solutions | Business Consulting & Credit Repair in McKinney, TX{% endblock %}</title>
+    
+    <!-- Core Business Schema (appears on all pages) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://rickjeffersonsolutions.com",
+      "name": "RJ Business Solutions",
+      "image": "/static/img/rj-solutions-office.jpg",
+      "description": "Expert business consulting, credit repair, and automation solutions in McKinney, TX. Led by Rick Jefferson, helping businesses achieve their full potential.",
+      "url": "https://rickjeffersonsolutions.com",
+      "telephone": "+19453088003",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2150 S Central Expy Suite 200",
+        "addressLocality": "McKinney",
+        "addressRegion": "TX",
+        "postalCode": "75070",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.198019,
+        "longitude": -96.717248
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "description": "By Appointment"
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/rick-jefferson",
+        "https://www.tiktok.com/@rick_jeff_solution",
+        "https://maps.app.goo.gl/1nwXzaAFpm8r5p9y8"
+      ]
+    }
+    </script>
+
+    <!-- Page-Specific Schema -->
+    {% block schema %}{% endblock %}
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="{% block meta_description %}RJ Business Solutions - Expert business consulting, credit repair, and automation solutions in McKinney, TX. Transform your business today.{% endblock %}">
+    <meta name="keywords" content="{% block meta_keywords %}RJ Business Solutions, business consulting McKinney, credit repair Texas, business automation, Rick Jefferson{% endblock %}">
+    
+    <!-- Geo Meta Tags -->
+    <meta name="geo.region" content="US-TX">
+    <meta name="geo.placename" content="McKinney">
+    <meta name="geo.position" content="33.198019;-96.717248">
+    <meta name="ICBM" content="33.198019, -96.717248">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="{% block og_title %}RJ Business Solutions | Business Consulting McKinney TX{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}Transform your business with RJ Business Solutions. Expert consulting, credit repair, and automation services in McKinney, TX.{% endblock %}">
+    <meta property="og:image" content="{% block og_image %}/static/img/rj-solutions-office.jpg{% endblock %}">
+    <meta property="og:url" content="{% block og_url %}https://rickjeffersonsolutions.com{% endblock %}">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/static/img/favicon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'YOUR-GA-ID');
+    </script>
+
+    {% block head %}{% endblock %}
+</head>
+<body>
+    {% include './partials/header.html' %}
+    
+    {% block content %}{% endblock %}
+    
+    {% include './partials/footer.html' %}
+
+    <!-- JavaScript -->
+    <script src="/static/js/main.js"></script>
+    {% block scripts %}{% endblock %}
+
+    <!-- Event Tracking -->
+    <script>
+        // Click-to-Call Tracking
+        document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+            link.addEventListener('click', function() {
+                gtag('event', 'click_to_call', {
+                    'event_category': 'Contact',
+                    'event_label': this.href.replace('tel:', '')
+                });
+            });
+        });
+
+        // Map Click Tracking
+        document.querySelectorAll('a[href*="maps.google.com"], a[href*="maps.app.goo.gl"]').forEach(function(link) {
+            link.addEventListener('click', function() {
+                gtag('event', 'map_click', {
+                    'event_category': 'Navigation',
+                    'event_label': 'Google Maps'
+                });
+            });
+        });
+
+        // Form Submission Tracking
+        document.querySelectorAll('form').forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                gtag('event', 'form_submission', {
+                    'event_category': 'Contact',
+                    'event_label': this.id || 'Contact Form'
+                });
+            });
+        });
+
+        // Social Media Click Tracking
+        document.querySelectorAll('a[href*="linkedin.com"], a[href*="tiktok.com"]').forEach(function(link) {
+            link.addEventListener('click', function() {
+                gtag('event', 'social_click', {
+                    'event_category': 'Social',
+                    'event_label': this.href
+                });
+            });
+        });
+
+        // Service Link Tracking
+        document.querySelectorAll('a[href*="services"]').forEach(function(link) {
+            link.addEventListener('click', function() {
+                gtag('event', 'service_click', {
+                    'event_category': 'Navigation',
+                    'event_label': this.textContent.trim()
+                });
+            });
+        });
+    </script>
+</body>
+</html>

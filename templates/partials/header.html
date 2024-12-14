@@ -1,0 +1,85 @@
+{% block header %}
+<!-- Header Start -->
+<header class="header-area relative z-[999]">
+    <div class="container">
+        <div class="grid grid-cols-12">
+            <div class="col-span-12">
+                <div class="flex flex-wrap items-center justify-between">
+                    <a href="{{ url_for('home') }}" class="block">
+                        <h1 class="text-2xl font-bold text-primary">RJ Business Solutions</h1>
+                    </a>
+                    <nav class="flex flex-wrap items-center">
+                        <ul class="hidden lg:flex flex-wrap items-center">
+                            <li class="mr-7 xl:mr-12">
+                                <a href="{{ url_for('home') }}" class="text-black hover:text-primary py-4 flex items-center text-base capitalize font-medium">Home</a>
+                            </li>
+                            <li class="mr-7 xl:mr-12">
+                                <a href="{{ url_for('about') }}" class="text-black hover:text-primary py-4 flex items-center text-base capitalize font-medium">About</a>
+                            </li>
+                            <li class="mr-7 xl:mr-12">
+                                <a href="{{ url_for('service') }}" class="text-black hover:text-primary py-4 flex items-center text-base capitalize font-medium">Services</a>
+                            </li>
+                            <li class="mr-7 xl:mr-12">
+                                <a href="{{ url_for('portfolio') }}" class="text-black hover:text-primary py-4 flex items-center text-base capitalize font-medium">Portfolio</a>
+                            </li>
+                            <li class="mr-7 xl:mr-12">
+                                <a href="{{ url_for('contact') }}" class="text-black hover:text-primary py-4 flex items-center text-base capitalize font-medium">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="lg:hidden">
+                            <button class="text-black hover:text-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.75 12H20.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.75 6H20.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.75 18H20.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="hidden lg:flex items-center">
+                            <a href="tel:945-308-8003" class="btn-primary">Call (945) 308-8003</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Menu Start -->
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions">
+    <div class="offcanvas-header">
+        <a href="{{ url_for('home') }}" class="block">
+            <h1 class="text-2xl font-bold text-primary">RJ Business Solutions</h1>
+        </a>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <nav>
+            <ul>
+                <li class="mb-4">
+                    <a href="{{ url_for('home') }}" class="text-black hover:text-primary text-base capitalize font-medium">Home</a>
+                </li>
+                <li class="mb-4">
+                    <a href="{{ url_for('about') }}" class="text-black hover:text-primary text-base capitalize font-medium">About</a>
+                </li>
+                <li class="mb-4">
+                    <a href="{{ url_for('service') }}" class="text-black hover:text-primary text-base capitalize font-medium">Services</a>
+                </li>
+                <li class="mb-4">
+                    <a href="{{ url_for('portfolio') }}" class="text-black hover:text-primary text-base capitalize font-medium">Portfolio</a>
+                </li>
+                <li class="mb-4">
+                    <a href="{{ url_for('contact') }}" class="text-black hover:text-primary text-base capitalize font-medium">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mt-8">
+            <a href="tel:945-308-8003" class="btn-primary w-full text-center">Call (945) 308-8003</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

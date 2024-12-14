@@ -1,0 +1,225 @@
+{% extends '../partials/layout1.html' %}
+
+{% block content %}
+<!-- Main Wrapper Start -->
+<main class="main-wrapper">
+    <!-- Hero Section -->
+    <div class="bg-black py-[60px] lg:py-[100px]">
+        <div class="container">
+            <div class="text-center text-colorButteryWhite">
+                <h1 class="mb-[15px]">Our Success Stories</h1>
+                <p class="text-lg md:text-xl">Discover how we've transformed businesses through financial empowerment and technology</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <section class="py-20 bg-colorIvory">
+        <div class="container">
+            <!-- Featured Case Studies -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold text-center mb-16">Featured Success Stories</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Credit Repair Success -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="aspect-w-16 aspect-h-9 relative">
+                            <img src="/static/img/portfolio/credit-repair.jpg" alt="Credit Repair Success Story" class="object-cover w-full h-full"/>
+                            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                                <a href="{{ url_for('portfolioDetails') }}" class="btn-primary">View Details</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="mb-4">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Credit Repair</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">From 520 to 750 in 6 Months</h3>
+                            <p class="mb-4">Helped a veteran client dramatically improve their credit score through our comprehensive credit repair program.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-bold">Robert Anderson</span>
+                                <span class="text-gray-600">U.S. Army Veteran</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Formation Success -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="aspect-w-16 aspect-h-9 relative">
+                            <img src="/static/img/portfolio/business-formation.jpg" alt="Business Formation Success Story" class="object-cover w-full h-full"/>
+                            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                                <a href="{{ url_for('portfolioDetails') }}" class="btn-primary">View Details</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="mb-4">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Business Formation</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">$2M Funding Success</h3>
+                            <p class="mb-4">Guided a startup from formation to securing major funding through strategic planning and grant writing.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-bold">Jennifer Williams</span>
+                                <span class="text-gray-600">CEO, TechStart Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technology Integration -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="aspect-w-16 aspect-h-9 relative">
+                            <img src="/static/img/portfolio/tech-integration.jpg" alt="Technology Integration Success Story" class="object-cover w-full h-full"/>
+                            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                                <a href="{{ url_for('portfolioDetails') }}" class="btn-primary">View Details</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="mb-4">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">AI & Security</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">AI-Powered Operations</h3>
+                            <p class="mb-4">Implemented custom AI solutions that increased operational efficiency by 300% while enhancing security.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-bold">Marcus Thompson</span>
+                                <span class="text-gray-600">CTO, Digital Dynamics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact Metrics -->
+            <div class="bg-white rounded-lg shadow-lg p-12 mb-20">
+                <h2 class="text-3xl font-bold text-center mb-12">Our Impact</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">300+</div>
+                        <div class="text-lg">Businesses Launched</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">175+</div>
+                        <div class="text-lg">Websites Developed</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">30+</div>
+                        <div class="text-lg">AI Solutions Deployed</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">98%</div>
+                        <div class="text-lg">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Projects -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold text-center mb-16">Recent Success Stories</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Credit Success Story -->
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="flex items-start gap-6">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Veterans Credit Recovery Program</h3>
+                                <p class="mb-4">Helped 50+ veterans improve their credit scores and secure VA loans through our specialized credit repair program.</p>
+                                <div class="text-primary font-bold">Multiple Success Stories</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Formation Story -->
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="flex items-start gap-6">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Tech Startup Launch</h3>
+                                <p class="mb-4">Guided a technology startup from formation to securing seed funding, implementing AI solutions, and establishing market presence.</p>
+                                <div class="text-primary font-bold">Ongoing Success Story</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Integration Story -->
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="flex items-start gap-6">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Enterprise AI Implementation</h3>
+                                <p class="mb-4">Developed and deployed custom AI solutions for workflow automation, reducing processing time by 75% and improving accuracy.</p>
+                                <div class="text-primary font-bold">Transformative Results</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Security Implementation -->
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="flex items-start gap-6">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Comprehensive Security Overhaul</h3>
+                                <p class="mb-4">Implemented enterprise-level security solutions, protecting sensitive data and ensuring compliance with industry standards.</p>
+                                <div class="text-primary font-bold">Enhanced Protection</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client Testimonials -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold text-center mb-12">Client Success Stories</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="text-primary text-4xl mb-4">"</div>
+                        <p class="mb-6">Rick and Angel's expertise in credit repair and business development was exactly what I needed. They helped me improve my credit score and launch my dream business.</p>
+                        <div class="font-bold">Christopher Rodriguez</div>
+                        <div class="text-gray-600">Owner, Elite Training Center</div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="text-primary text-4xl mb-4">"</div>
+                        <p class="mb-6">Their AI solutions transformed our business operations. Rick's technical expertise combined with Angel's business acumen created the perfect solution for our needs.</p>
+                        <div class="font-bold">Lisa Chang</div>
+                        <div class="text-gray-600">Operations Director, TechFlow</div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="text-primary text-4xl mb-4">"</div>
+                        <p class="mb-6">As a veteran, I appreciate how Rick and Angel went above and beyond to help me rebuild my credit and start my security business. Their support was invaluable.</p>
+                        <div class="font-bold">Michael Foster</div>
+                        <div class="text-gray-600">CEO, Veteran Security Solutions</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="bg-black text-white rounded-lg shadow-lg p-12 text-center">
+                <h2 class="text-3xl font-bold mb-6">Ready to Write Your Success Story?</h2>
+                <p class="text-lg mb-8">Join the hundreds of businesses we've helped transform and grow.</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="tel:945-308-8003" class="btn-primary px-8 py-4">Call (945) 308-8003</a>
+                    <a href="mailto:rickjefferson@rickjeffersonsolutions.com" class="btn-secondary px-8 py-4">Email Us</a>
+                </div>
+                <div class="mt-8 flex justify-center gap-6">
+                    <a href="https://www.tiktok.com/@rick_jeff_solution" class="text-white hover:text-primary transition-colors">TikTok</a>
+                    <a href="https://www.linkedin.com/in/rick-jefferson" class="text-white hover:text-primary transition-colors">LinkedIn</a>
+                    <a href="https://www.facebook.com/rickjefferson" class="text-white hover:text-primary transition-colors">Facebook</a>
+                    <a href="https://www.instagram.com/rickjeffsolutions" class="text-white hover:text-primary transition-colors">Instagram</a>
+                    <a href="https://twitter.com/ricksolutions1" class="text-white hover:text-primary transition-colors">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,995 @@
+{% extends './partials/layout1.html' %}
+
+
+{% block content %}
+        <!-- ...::: Header Section Start :::... -->
+        <header class="section-header site-header is-transparent fixed top-0 z-30 w-full bg-transparent py-2">
+        <!-- Section Container -->
+        <div class="container">
+            <!-- Header Area -->
+            <div class="flex items-center justify-between">
+                <!-- Header Left Block -->
+                <div class="flex items-center gap-x-10">
+                    <!-- Header Logo -->
+                    <a href="{{ url_for('index') }}" class="h-auto w-auto">
+                        <img src="/static/img/logo-black.png" alt="logo-black" width="121" height="24" />
+                    </a>
+                    <!-- Header Logo -->
+
+                    <!-- Header Navigation -->
+                    <div class="menu-block-wrapper">
+                        <div class="menu-overlay"></div>
+                        <nav class="menu-block" id="append-menu-header">
+                            <div class="mobile-menu-head">
+                                <div class="go-back">
+                                    <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" />
+                                </div>
+                                <div class="current-menu-title"></div>
+                                <div class="mobile-menu-close">&times;</div>
+                            </div>
+                            <ul class="site-menu-main">
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">Demo
+                                        <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90 invert-0 lg:rotate-0" />
+                                    </a>
+                                    <ul class="sub-menu" id="submenu-0">
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('index') }}">Design Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('index2') }}">Startup Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('index3') }}">SEO Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('index4') }}">Business Consultation</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('index5') }}">Digital Marketing</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('index6') }}">Interior Design Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('index7') }}">Advertising Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('index8') }}">IT Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('index9') }}">Social Marketing Agency</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">
+                                    <a href="{{ url_for('about') }}" class="nav-link-item">About Us</a>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">Pages
+                                        <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90 invert-0 lg:rotate-0" />
+                                    </a>
+                                    <ul class="sub-menu" id="submenu-1">
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">Services
+                                                <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90" />
+                                            </a>
+                                            <ul class="sub-menu shape-none" id="submenu-2">
+                                                <li class="sub-menu--item">
+                                                    <a href="{{ url_for('service') }}">Service</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{{ url_for('serviceDetails') }}">Service Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">Projects
+                                                <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90" />
+                                            </a>
+                                            <ul class="sub-menu shape-none" id="submenu-3">
+                                                <li class="sub-menu--item">
+                                                    <a href="{{ url_for('portfolio1') }}">Project 1</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{{ url_for('portfolio2') }}">Project 2</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{{ url_for('portfolioDetails') }}">Project Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">Team
+                                                <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" class="-rotate-90" height="4" />
+                                            </a>
+                                            <ul class="sub-menu shape-none" id="submenu-4">
+                                                <li class="sub-menu--item">
+                                                    <a href="{{ url_for('team') }}">Team</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{{ url_for('teamDetails') }}">Team Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">Utility
+                                                <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90" />
+                                            </a>
+                                            <ul class="sub-menu shape-none" id="submenu-5">
+                                                <li class="sub-menu--item">
+                                                    <a href="{{ url_for('comingsoon') }}">Coming Soon</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{{ url_for('error') }}">404 Page</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">Authentication
+                                                <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" class="-rotate-90" height="4" />
+                                            </a>
+                                            <ul class="sub-menu shape-none" id="submenu-6">
+                                                <li class="sub-menu--item">
+                                                    <a href="{{ url_for('login') }}">Sign In</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{{ url_for('signup') }}">Sign Up</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{{ url_for('resetPassword') }}">Reset Password</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('pricing') }}" data-menu-get="h3" class="drop-trigger">Pricing
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('faq') }}" data-menu-get="h3" class="drop-trigger">FAQ’s
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('testimonial') }}" data-menu-get="h3" class="drop-trigger">Testimonial
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">Blog
+                                        <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90 invert-0 lg:rotate-0" />
+                                    </a>
+                                    <ul class="sub-menu" id="submenu-7">
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('blog1') }}">Blog 1</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('blog2') }}">Blog 2</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('blog3') }}">Blog 3</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('blog4') }}">Blog 4</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{{ url_for('blogDetails') }}">Blog Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">
+                                    <a href="{{ url_for('contact') }}" class="nav-link-item">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Header Navigation -->
+                </div>
+                <!-- Header Left Block -->
+
+                <!-- Header Right Block -->
+                <div class="flex items-center gap-x-6">
+                    <a href="{{ url_for('contact') }}" class="group hidden rounded border-2 border-[#4659FF] bg-[#4659FF] px-6 py-3 text-base font-bold text-white lg:inline-flex lg:px-8 xl:px-[42px]">
+                        <div class="relative flex items-center justify-center overflow-hidden">
+                            <span class="translate-y-0 transition-all duration-300 group-hover:-translate-y-full">Hire Us!</span>
+                            <span class="absolute translate-y-full transition-all duration-300 group-hover:translate-y-0">Hire Us!</span>
+                        </div>
+                    </a>
+                    <!-- Responsive Offcanvas Menu Button -->
+                    <div class="block lg:hidden">
+                        <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+                            <span class="bg-black before:bg-black after:bg-black"></span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Header Right Block -->
+            </div>
+            <!-- Header Area -->
+        </div>
+        <!-- Section Container -->
+        </header>
+        <!-- ...::: Header Section End :::... -->
+
+        <!-- Main Wrapper Start -->
+        <main class="main-wrapper">
+        <!-- ...::: Hero Section Start :::... -->
+        <section class="section-hero">
+            <div class="relative z-10 bg-[#F8FCDD]">
+                <div class="py-20 md:py-[100px] xl:py-[193px]">
+                    <div class="container">
+                        <!-- Hero Area -->
+                        <div class="grid grid-cols-12 gap-10">
+                            <!-- Hero Content Block -->
+                            <div class="col-span-12 text-[#0B1040] lg:col-span-6 xxxl:col-span-8">
+                                <h1 class="font-bricolageGrotesque text-5xl font-bold leading-[1.09] sm:text-6xl md:text-7xl lg:text-[7.30vw]">
+                                    We present your brand
+                                    <span class="relative z-10">
+                                        creatively
+                                        <img src="/static/img/elemnts/th-7-hero-highlight-mark.svg" alt="th-7-hero-highlight-mark" class="absolute bottom-0 -z-10 w-full" />
+                                    </span>
+                                </h1>
+                                <p class="my-6 mb-10 max-w-3xl text-lg xl:text-2xl">
+                                    Our advertising agency specializes in creating captivating
+                                    and visually stunning campaigns that leave a lasting
+                                    impression on audiences to elevate your brand to new
+                                    heights.
+                                </p>
+
+                                <div class="flex flex-wrap gap-6">
+                                    <a href="{{ url_for('contact') }}" class="group inline-flex rounded border-2 border-[#4659FF] bg-[#4659FF] px-6 py-3 text-base font-bold text-white lg:px-8 lg:py-4 xl:px-[42px]">
+                                        <div class="relative flex items-center justify-center overflow-hidden">
+                                            <span class="translate-y-0 transition-all duration-300 group-hover:-translate-y-full">Get In Touch</span>
+                                            <span class="absolute translate-y-full transition-all duration-300 group-hover:translate-y-0">Get In Touch</span>
+                                        </div>
+                                    </a>
+                                    <a href="{{ url_for('service') }}" class="group inline-flex rounded border-2 border-[#0B1040] bg-transparent px-6 py-3 text-base font-bold text-[#0B1040] lg:px-8 lg:py-4 xl:px-[42px]">
+                                        <div class="relative flex items-center justify-center overflow-hidden">
+                                            <span class="translate-y-0 transition-all duration-300 group-hover:-translate-y-full">Explore Our Services</span>
+                                            <span class="absolute translate-y-full transition-all duration-300 group-hover:translate-y-0">Explore Our Services</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Hero Content Block -->
+                            <!-- Hero Image Block -->
+                            <div class="right-0 top-0 col-span-12 mx-auto flex h-auto max-w-lg lg:absolute lg:mx-0 lg:justify-end xl:max-w-xl xxxl:max-w-full">
+                                <img src="/static/img/images/th-7/hero-img.png" alt="hero-img" width="758" height="1000" class="max-w-full" />
+                            </div>
+                            <!-- Hero Image Block -->
+                        </div>
+                        <!-- Hero Area -->
+                    </div>
+                </div>
+                <!-- Background Element -->
+                <div class="absolute left-8 top-8 -z-10">
+                    <img src="/static/img/elemnts/th-7-hero-shape.svg" alt="th-7-hero-shape" width="259" height="268" />
+                </div>
+                <!-- Background Element -->
+            </div>
+            <!-- Hero Space -->
+        </section>
+        <!-- ...::: Hero Section End :::... -->
+
+        <!-- ...::: Client Slider Section Start :::... -->
+        <div class="section-client">
+            <!-- Section Background -->
+            <div class="bg-[#4659FF]">
+                <!-- Section Space -->
+                <div class="py-[60px] lg:py-20 xl:py-[100px]">
+                    <!-- Section Container -->
+                    <div class="container">
+                        <p class="para-lg text-center text-white">
+                            We are happy to work and share creative vision with
+                            international partners such as:
+                        </p>
+
+                        <!-- Slider main container -->
+                        <div class="swiper client-slider-2 mt-10 border-b border-t border-[#F8FCDD]/10 lg:mt-[60px] xl:mt-20">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper divide-x divide-[#F8FCDD]/10">
+                                <!-- Slides -->
+                                <div class="swiper-slide flex justify-center py-6">
+                                    <img src="/static/img/images/th-7/client-logo-1.png" alt="client-logo-1" width="181" height="38" class="h-[30px] w-auto" />
+                                </div>
+                                <div class="swiper-slide flex justify-center py-6">
+                                    <img src="/static/img/images/th-7/client-logo-2.png" alt="client-logo-2" width="183" height="35" class="h-[30px] w-auto" />
+                                </div>
+                                <div class="swiper-slide flex justify-center py-6">
+                                    <img src="/static/img/images/th-7/client-logo-3.png" alt="client-logo-3" width="172" height="35" class="h-[30px] w-auto" />
+                                </div>
+                                <div class="swiper-slide flex justify-center py-6">
+                                    <img src="/static/img/images/th-7/client-logo-4.png" alt="client-logo-4" width="175" height="30" class="h-[30px] w-auto" />
+                                </div>
+                                <div class="swiper-slide flex justify-center py-6">
+                                    <img src="/static/img/images/th-7/client-logo-5.png" alt="client-logo-5" width="168" height="37" class="h-[30px] w-auto" />
+                                </div>
+                                <div class="swiper-slide flex justify-center py-6">
+                                    <img src="/static/img/images/th-7/client-logo-6.png" alt="client-logo-6" width="196" height="48" class="h-[30px] w-auto" />
+                                </div>
+                                <div class="swiper-slide flex justify-center py-6">
+                                    <img src="/static/img/images/th-7/client-logo-7.png" alt="client-logo-7" width="189" height="40" class="h-[30px] w-auto" />
+                                </div>
+                                <div class="swiper-slide flex justify-center py-6">
+                                    <img src="/static/img/images/th-7/client-logo-8.png" alt="client-logo-8" width="193" height="48" class="h-[30px] w-auto" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper client-slider-3 border-b border-[#F8FCDD]/10">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper divide-x divide-[#F8FCDD]/10">
+                                <!-- Slides -->
+                                <div class="swiper-slide flex justify-center py-6">
+                                    <img src="/static/img/images/th-7/client-logo-1.png" alt="client-logo-1" width="181" height="38" class="h-[30px] w-auto" />
+                                </div>
+                                <div class="swiper-slide flex justify-center py-6">
+                                    <img src="/static/img/images/th-7/client-logo-2.png" alt="client-logo-2" width="183" height="35" class="h-[30px] w-auto" />
+                                </div>
+                                <div class="swiper-slide flex justify-center py-6">
+                                    <img src="/static/img/images/th-7/client-logo-3.png" alt="client-logo-3" width="172" height="35" class="h-[30px] w-auto" />
+                                </div>
+                                <div class="swiper-slide flex justify-center py-6">
+                                    <img src="/static/img/images/th-7/client-logo-4.png" alt="client-logo-4" width="175" height="30" class="h-[30px] w-auto" />
+                                </div>
+                                <div class="swiper-slide flex justify-center py-6">
+                                    <img src="/static/img/images/th-7/client-logo-5.png" alt="client-logo-5" width="168" height="37" class="h-[30px] w-auto" />
+                                </div>
+                                <div class="swiper-slide flex justify-center py-6">
+                                    <img src="/static/img/images/th-7/client-logo-6.png" alt="client-logo-6" width="196" height="48" class="h-[30px] w-auto" />
+                                </div>
+                                <div class="swiper-slide flex justify-center py-6">
+                                    <img src="/static/img/images/th-7/client-logo-7.png" alt="client-logo-7" width="189" height="40" class="h-[30px] w-auto" />
+                                </div>
+                                <div class="swiper-slide flex justify-center py-6">
+                                    <img src="/static/img/images/th-7/client-logo-8.png" alt="client-logo-8" width="193" height="48" class="h-[30px] w-auto" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </div>
+            <!-- Section Background -->
+        </div>
+        <!-- ...::: Client Slider Section End :::... -->
+
+        <!-- ...::: Content Section Start :::... -->
+        <section class="section-content">
+            <!-- Section Space -->
+            <div class="section-space">
+                <!-- Section Container -->
+                <div class="container">
+                    <div class="flex flex-col gap-y-14 lg:gap-y-20 xl:gap-y-24 xxl:gap-y-28 xxxl:gap-y-[150px]">
+                        <!-- Content Area -->
+                        <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,0.8fr)_1fr]">
+                            <!-- Content Left Block -->
+                            <div class="jos" data-jos_animation="fade-left">
+                                <img src="/static/img/images/th-7/content-img-1.png" alt="content-img-1" width="786" height="674" class="max-w-full" />
+                            </div>
+                            <!-- Content Left Block -->
+                            <!-- Content Right Block -->
+                            <div class="jos" data-jos_animation="fade-right">
+                                <!-- Section Block -->
+                                <h2 class="font-bricolageGrotesque text-4xl font-bold leading-[1.033] -tracking-[1px] text-[#0B1040] sm:text-5xl lg:text-6xl xl:text-7xl xxl:text-[90px]">
+                                    To analyze the market demand for a product
+                                </h2>
+                                <!-- Section Block -->
+
+                                <!-- Content -->
+                                <div class="mt-5">
+                                    <p class="para-lg text-[#0B1040]">
+                                        We conduct thorough market research to comprehend our
+                                        target audience, industry trends, and competitors. This
+                                        data serves as the foundation for creating effective
+                                        advertising strategies.
+                                    </p>
+
+                                    <ul class="para-lg mt-8 flex flex-col gap-y-6 text-[#0B1040] lg:mt-[50x]">
+                                        <li class="bg-[url(../img/icons/icon-yellow-badge-check-mark.svg)] bg-no-repeat pl-10">
+                                            <strong class="font-semibold">Market Research:</strong>
+                                            Conducting market research to gather main information
+                                            about the target audience, competitors trends.
+                                        </li>
+                                        <li class="bg-[url(../img/icons/icon-yellow-badge-check-mark.svg)] bg-no-repeat pl-10">
+                                            <strong class="font-semibold">Strategic Planning:</strong>
+                                            We work closely with clients to define clear
+                                            advertising objectives and develop a comprehensive
+                                            strategy.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Content -->
+                            </div>
+                            <!-- Content Right Block -->
+                        </div>
+                        <!-- Content Area -->
+                        <!-- Content Area -->
+                        <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-[1fr_minmax(0,0.6fr)] lg:gap-20">
+                            <!-- Content Left Block -->
+                            <div class="jos order-2" data-jos_animation="fade-left">
+                                <img src="/static/img/images/th-7/content-img-2.png" alt="content-img-2" width="584" height="565" class="max-w-full" />
+                            </div>
+                            <!-- Content Left Block -->
+                            <!-- Content Right Block -->
+                            <div class="jos order-1" data-jos_animation="fade-right">
+                                <!-- Section Block -->
+                                <h2 class="font-bricolageGrotesque text-4xl font-bold leading-[1.033] -tracking-[1px] text-[#0B1040] sm:text-5xl lg:text-6xl xl:text-7xl xxl:text-[90px]">
+                                    Identifying the most appropriate media channels
+                                </h2>
+                                <!-- Section Block -->
+
+                                <!-- Content -->
+                                <div class="mt-5">
+                                    <p class="para-lg text-[#0B1040]">
+                                        We identify the most appropriate media channels to reach
+                                        the target audience. We negotiate & purchase advertising
+                                        space or time, optimizing placement for maximum impact
+                                        and cost-effectiveness.
+                                    </p>
+
+                                    <ul class="para-lg mt-8 flex flex-col gap-y-6 text-[#0B1040] lg:mt-[50x]">
+                                        <li class="bg-[url(../img/icons/icon-yellow-badge-check-mark.svg)] bg-no-repeat pl-10">
+                                            <strong class="font-semibold">Creative Development:</strong>
+                                            We are responsible for creating attractive and
+                                            eye-catching advertisements across various platforms.
+                                        </li>
+                                        <li class="bg-[url(../img/icons/icon-yellow-badge-check-mark.svg)] bg-no-repeat pl-10">
+                                            <strong class="font-semibold">Media Planning and Buying:</strong>
+                                            We negotiate and purchase advertising space or time,
+                                            optimizing placement for maximum impact.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Content -->
+                            </div>
+                            <!-- Content Right Block -->
+                        </div>
+                        <!-- Content Area -->
+                    </div>
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Section Space -->
+        </section>
+        <!-- ...::: Content Section End :::... -->
+
+        <!-- ...::: Video Section Start :::... -->
+        <div class="section-video">
+            <!-- Section Space -->
+            <div class="section-space-bottom">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Section Block -->
+                    <div class="mx-auto mb-10 max-w-[856px] text-center md:mb-[60px] lg:mb-20">
+                        <h2 class="font-bricolageGrotesque text-4xl font-bold leading-[1.033] -tracking-[1px] text-[#0B1040] sm:text-5xl lg:text-6xl xl:text-7xl xxl:text-[90px]">
+                            Nurturing a robust brand identity
+                        </h2>
+                    </div>
+                    <!-- Section Block -->
+                    <div class="relative">
+                        <div class="relative overflow-hidden rounded-[10px]">
+                            <img src="/static/img/images/th-7/video-img.jpg" alt="video-img" width="1296" height="651" class="max-w-full" />
+                            <!-- Video Button -->
+                            <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q" aria-label="video-play" class="absolute bottom-10 right-10 mx-auto inline-flex h-[60px] w-[60px] items-center justify-center rounded-[50%] bg-[#4659FF]">
+                                <div class="relative z-10">
+                                    <img src="/static/img/icons/icon-white-play.svg" alt="play-button" width="14" height="16" />
+                                </div>
+                            </a>
+                            <!-- Video Button -->
+                        </div>
+
+                        <img src="/static/img/elemnts/shape-yellow-star-long.svg" alt="shape-yellow-star-long" width="160" height="251" class="absolute -left-20 -top-32 hidden animate-pulse lg:inline-block" />
+                    </div>
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Section Space -->
+        </div>
+        <!-- ...::: Video Section End :::... -->
+
+        <!-- ...::: Service Section Start :::... -->
+        <section class="section-service">
+            <!-- Section Background -->
+            <div class="relative z-10 bg-[#0B1040]">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container">
+                        <!-- Section Block -->
+                        <div class="mb-10 flex flex-wrap items-center justify-between gap-10 md:mb-[60px] lg:mb-20">
+                            <h2 class="jos max-w-[700px] font-bricolageGrotesque text-4xl font-bold leading-[1.033] -tracking-[1px] text-[#F8FCDD] sm:text-5xl lg:text-6xl xl:text-7xl xxl:text-[90px]">
+                                What we can do for your brand
+                            </h2>
+                            <a href="{{ url_for('service') }}" class="group inline-flex rounded border-2 border-[#4659FF] bg-[#4659FF] px-6 py-3 text-base font-bold text-white lg:px-8 lg:py-4 xl:px-[42px]">
+                                <div class="relative flex items-center justify-center overflow-hidden">
+                                    <span class="translate-y-0 transition-all duration-300 group-hover:-translate-y-full">View All Services</span>
+                                    <span class="absolute translate-y-full transition-all duration-300 group-hover:translate-y-0">View All Services</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Section Block -->
+
+                        <!-- Service List -->
+                        <ul class="grid grid-cols-1 gap-6">
+                            <!-- Service Item -->
+                            <li class="jos group grid grid-cols-1 items-center gap-8 rounded-[5px] bg-[#F8FCDD]/5 p-10 lg:grid-cols-[0.75fr_1fr_50px] lg:gap-12 xl:gap-8 xxl:gap-32">
+                                <a href="{{ url_for('serviceDetails') }}" class="font-bricolageGrotesque text-3xl font-bold leading-[1.26] text-[#F8FCDD] lg:text-[38px]">1. Ad Campaigns:</a>
+                                <p class="para-lg text-[#F8FCDD]">
+                                    Crafting and executing comprehensive advertising campaigns
+                                    to reach the target audience effectively.
+                                </p>
+                                <a href="{{ url_for('serviceDetails') }}" class="relative inline-flex h-auto w-[50px] items-center justify-center overflow-hidden">
+                                    <img src="/static/img/icons/icon-buttery-white-solid-arrow-right.svg" alt="icon-buttery-white-solid-arrow-right" width="50" height="49" class="translate-x-0 transition-all duration-300 group-hover:translate-x-full" />
+                                    <img src="/static/img/icons/icon-blue-solid-arrow-right.svg" alt="icon-blue-solid-arrow-right" width="50" height="49" class="absolute -translate-x-full transition-all duration-300 group-hover:translate-x-0" />
+                                </a>
+                            </li>
+                            <!-- Service Item -->
+                            <!-- Service Item -->
+                            <li class="jos group grid grid-cols-1 items-center gap-8 rounded-[5px] bg-[#F8FCDD]/5 p-10 lg:grid-cols-[0.75fr_1fr_50px] lg:gap-12 xl:gap-8 xxl:gap-32">
+                                <a href="{{ url_for('serviceDetails') }}" class="font-bricolageGrotesque text-3xl font-bold leading-[1.26] text-[#F8FCDD] lg:text-[38px]">2. Strategic Planning</a>
+                                <p class="para-lg text-[#F8FCDD]">
+                                    Guide advertising efforts, ensuring alignment with overall
+                                    business goals and market conditions.
+                                </p>
+                                <a href="{{ url_for('serviceDetails') }}" class="relative inline-flex h-auto w-[50px] items-center justify-center overflow-hidden">
+                                    <img src="/static/img/icons/icon-buttery-white-solid-arrow-right.svg" alt="icon-buttery-white-solid-arrow-right" width="50" height="49" class="translate-x-0 transition-all duration-300 group-hover:translate-x-full" />
+                                    <img src="/static/img/icons/icon-blue-solid-arrow-right.svg" alt="icon-blue-solid-arrow-right" width="50" height="49" class="absolute -translate-x-full transition-all duration-300 group-hover:translate-x-0" />
+                                </a>
+                            </li>
+                            <!-- Service Item -->
+                            <!-- Service Item -->
+                            <li class="jos group grid grid-cols-1 items-center gap-8 rounded-[5px] bg-[#F8FCDD]/5 p-10 lg:grid-cols-[0.75fr_1fr_50px] lg:gap-12 xl:gap-8 xxl:gap-32">
+                                <a href="{{ url_for('serviceDetails') }}" class="font-bricolageGrotesque text-3xl font-bold leading-[1.26] text-[#F8FCDD] lg:text-[38px]">3. TV Advertising:</a>
+                                <p class="para-lg text-[#F8FCDD]">
+                                    Effective TV advertising is the auditory aspect of the
+                                    medium to convey the client's message.
+                                </p>
+                                <a href="{{ url_for('serviceDetails') }}" class="relative inline-flex h-auto w-[50px] items-center justify-center overflow-hidden">
+                                    <img src="/static/img/icons/icon-buttery-white-solid-arrow-right.svg" alt="icon-buttery-white-solid-arrow-right" width="50" height="49" class="translate-x-0 transition-all duration-300 group-hover:translate-x-full" />
+                                    <img src="/static/img/icons/icon-blue-solid-arrow-right.svg" alt="icon-blue-solid-arrow-right" width="50" height="49" class="absolute -translate-x-full transition-all duration-300 group-hover:translate-x-0" />
+                                </a>
+                            </li>
+                            <!-- Service Item -->
+                            <!-- Service Item -->
+                            <li class="jos group grid grid-cols-1 items-center gap-8 rounded-[5px] bg-[#F8FCDD]/5 p-10 lg:grid-cols-[0.75fr_1fr_50px] lg:gap-12 xl:gap-8 xxl:gap-32">
+                                <a href="{{ url_for('serviceDetails') }}" class="font-bricolageGrotesque text-3xl font-bold leading-[1.26] text-[#F8FCDD] lg:text-[38px]">4. Social Media Ads:</a>
+                                <p class="para-lg text-[#F8FCDD]">
+                                    Designing and implementing advertising strategies on
+                                    various social media to increase brand visibility.
+                                </p>
+                                <a href="{{ url_for('serviceDetails') }}" class="relative inline-flex h-auto w-[50px] items-center justify-center overflow-hidden">
+                                    <img src="/static/img/icons/icon-buttery-white-solid-arrow-right.svg" alt="icon-buttery-white-solid-arrow-right" width="50" height="49" class="translate-x-0 transition-all duration-300 group-hover:translate-x-full" />
+                                    <img src="/static/img/icons/icon-blue-solid-arrow-right.svg" alt="icon-blue-solid-arrow-right" width="50" height="49" class="absolute -translate-x-full transition-all duration-300 group-hover:translate-x-0" />
+                                </a>
+                            </li>
+                            <!-- Service Item -->
+                            <!-- Service Item -->
+                            <li class="jos group grid grid-cols-1 items-center gap-8 rounded-[5px] bg-[#F8FCDD]/5 p-10 lg:grid-cols-[0.75fr_1fr_50px] lg:gap-12 xl:gap-8 xxl:gap-32">
+                                <a href="{{ url_for('serviceDetails') }}" class="font-bricolageGrotesque text-3xl font-bold leading-[1.26] text-[#F8FCDD] lg:text-[38px]">5. Direct Mail Ads:</a>
+                                <p class="para-lg text-[#F8FCDD]">
+                                    Creating targeted and personalized advertising materials
+                                    sent directly to a predefined audience.
+                                </p>
+                                <a href="{{ url_for('serviceDetails') }}" class="relative inline-flex h-auto w-[50px] items-center justify-center overflow-hidden">
+                                    <img src="/static/img/icons/icon-buttery-white-solid-arrow-right.svg" alt="icon-buttery-white-solid-arrow-right" width="50" height="49" class="translate-x-0 transition-all duration-300 group-hover:translate-x-full" />
+                                    <img src="/static/img/icons/icon-blue-solid-arrow-right.svg" alt="icon-blue-solid-arrow-right" width="50" height="49" class="absolute -translate-x-full transition-all duration-300 group-hover:translate-x-0" />
+                                </a>
+                            </li>
+                            <!-- Service Item -->
+                        </ul>
+                        <!-- Service List -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+
+                <!-- Background Element -->
+                <div class="absolute right-5 top-5 -z-10 hidden animate-pulse lg:inline-block">
+                    <img src="/static/img/elemnts/th-7-hero-shape.svg" alt="th-7-hero-shape" width="259" height="268" />
+                </div>
+                <!-- Background Element -->
+            </div>
+            <!-- Section Background -->
+        </section>
+        <!-- ...::: Service Section End :::... -->
+
+        <!-- ...::: Project Section Start :::... -->
+        <section class="section-project">
+            <!-- Section Space -->
+            <div class="section-space">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Section Block -->
+                    <div class="mx-auto mb-10 max-w-[856px] text-center md:mb-[60px] lg:mb-20">
+                        <h2 class="font-bricolageGrotesque text-4xl font-bold leading-[1.033] -tracking-[1px] text-[#0B1040] sm:text-5xl lg:text-6xl xl:text-7xl xxl:text-[90px]">
+                            Nurturing a robust brand identity
+                        </h2>
+                    </div>
+                    <!-- Section Block -->
+                </div>
+                <!-- Section Container -->
+                <!-- Project List -->
+                <ul class="grid grid-cols-1 gap-6 px-8 md:grid-cols-2 lg:flex">
+                    <li class="group relative overflow-hidden rounded-[10px] transition-all duration-500 hover:flex-grow-[5] lg:flex lg:flex-shrink-0 lg:flex-grow lg:basis-0">
+                        <img src="/static/img/images/th-7/project-img-1.png" alt="project-img-1" width="636" height="550" class="h-[550px] w-full object-cover object-center" />
+
+                        <div class="invisible absolute inset-0 flex items-end bg-gradient-to-t from-[#0B1040] to-[#0B1040]/10 p-5 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 xl:p-10">
+                            <div class="translate-x-10 text-[#F8FCDD] transition-all delay-150 duration-500 group-hover:translate-x-0">
+                                <a href="{{ url_for('portfolioDetails') }}" class="mb-3 block text-wrap font-bricolageGrotesque text-3xl font-bold leading-[1.26] xl:text-[38px]">#ZenithZest Campaign</a>
+                                <p class="para-lg">
+                                    Comprehensive advertising strategy, contributing to a
+                                    well-rounded and effective marketing campaign.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="group relative overflow-hidden rounded-[10px] transition-all duration-500 hover:flex-grow-[5] lg:flex lg:flex-shrink-0 lg:flex-grow lg:basis-0">
+                        <img src="/static/img/images/th-7/project-img-2.png" alt="project-img-2" width="636" height="550" class="h-[550px] w-full object-cover object-center" />
+
+                        <div class="invisible absolute inset-0 flex items-end bg-gradient-to-t from-[#0B1040] to-[#0B1040]/10 p-5 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 xl:p-10">
+                            <div class="translate-x-10 text-[#F8FCDD] transition-all delay-150 duration-500 group-hover:translate-x-0">
+                                <a href="{{ url_for('portfolioDetails') }}" class="mb-3 block text-wrap font-bricolageGrotesque text-3xl font-bold leading-[1.26] xl:text-[38px]">#VerveVista Venture</a>
+                                <p class="para-lg">
+                                    Comprehensive advertising strategy, contributing to a
+                                    well-rounded and effective marketing campaign.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="group relative overflow-hidden rounded-[10px] transition-all duration-500 hover:flex-grow-[5] lg:flex lg:flex-shrink-0 lg:flex-grow lg:basis-0">
+                        <img src="/static/img/images/th-7/project-img-3.png" alt="project-img-3" width="636" height="550" class="h-[550px] w-full object-cover object-center" />
+
+                        <div class="invisible absolute inset-0 flex items-end bg-gradient-to-t from-[#0B1040] to-[#0B1040]/10 p-5 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 xl:p-10">
+                            <div class="translate-x-10 text-[#F8FCDD] transition-all delay-150 duration-500 group-hover:translate-x-0">
+                                <a href="{{ url_for('portfolioDetails') }}" class="mb-3 block text-wrap font-bricolageGrotesque text-3xl font-bold leading-[1.26] xl:text-[38px]">#ZenithZest Campaign</a>
+                                <p class="para-lg">
+                                    Comprehensive advertising strategy, contributing to a
+                                    well-rounded and effective marketing campaign.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="group relative overflow-hidden rounded-[10px] transition-all duration-500 hover:flex-grow-[5] lg:flex lg:flex-shrink-0 lg:flex-grow lg:basis-0">
+                        <img src="/static/img/images/th-7/project-img-4.png" alt="project-img-4" width="636" height="550" class="h-[550px] w-full object-cover object-center" />
+
+                        <div class="invisible absolute inset-0 flex items-end bg-gradient-to-t from-[#0B1040] to-[#0B1040]/10 p-5 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 xl:p-10">
+                            <div class="translate-x-10 text-[#F8FCDD] transition-all delay-150 duration-500 group-hover:translate-x-0">
+                                <a href="{{ url_for('portfolioDetails') }}" class="mb-3 block text-wrap font-bricolageGrotesque text-3xl font-bold leading-[1.26] xl:text-[38px]">#Project Luminosity</a>
+                                <p class="para-lg">
+                                    Comprehensive advertising strategy, contributing to a
+                                    well-rounded and effective marketing campaign.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="group relative overflow-hidden rounded-[10px] transition-all duration-500 hover:flex-grow-[5] lg:flex lg:flex-shrink-0 lg:flex-grow lg:basis-0">
+                        <img src="/static/img/images/th-7/project-img-5.png" alt="project-img-5" width="636" height="550" class="h-[550px] w-full object-cover object-center" />
+
+                        <div class="invisible absolute inset-0 flex items-end bg-gradient-to-t from-[#0B1040] to-[#0B1040]/10 p-5 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 xl:p-10">
+                            <div class="translate-x-10 text-[#F8FCDD] transition-all delay-150 duration-500 group-hover:translate-x-0">
+                                <a href="{{ url_for('portfolioDetails') }}" class="mb-3 block text-wrap font-bricolageGrotesque text-3xl font-bold leading-[1.26] xl:text-[38px]">#Momentum Xperience</a>
+                                <p class="para-lg">
+                                    Comprehensive advertising strategy, contributing to a
+                                    well-rounded and effective marketing campaign.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="group relative overflow-hidden rounded-[10px] transition-all duration-500 hover:flex-grow-[5] lg:flex lg:flex-shrink-0 lg:flex-grow lg:basis-0">
+                        <img src="/static/img/images/th-7/project-img-6.png" alt="project-img-6" width="636" height="550" class="h-[550px] w-full object-cover object-center" />
+
+                        <div class="invisible absolute inset-0 flex items-end bg-gradient-to-t from-[#0B1040] to-[#0B1040]/10 p-5 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 xl:p-10">
+                            <div class="translate-x-10 text-[#F8FCDD] transition-all delay-150 duration-500 group-hover:translate-x-0">
+                                <a href="{{ url_for('portfolioDetails') }}" class="mb-3 block text-wrap font-bricolageGrotesque text-3xl font-bold leading-[1.26] xl:text-[38px]">#EpicEcho Initiative</a>
+                                <p class="para-lg">
+                                    Comprehensive advertising strategy, contributing to a
+                                    well-rounded and effective marketing campaign.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="group relative overflow-hidden rounded-[10px] transition-all duration-500 hover:flex-grow-[5] lg:flex lg:flex-shrink-0 lg:flex-grow lg:basis-0">
+                        <img src="/static/img/images/th-7/project-img-7.png" alt="project-img-7" width="636" height="550" class="h-[550px] w-full object-cover object-center" />
+
+                        <div class="invisible absolute inset-0 flex items-end bg-gradient-to-t from-[#0B1040] to-[#0B1040]/10 p-5 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 xl:p-10">
+                            <div class="translate-x-10 text-[#F8FCDD] transition-all delay-150 duration-500 group-hover:translate-x-0">
+                                <a href="{{ url_for('portfolioDetails') }}" class="mb-3 block text-wrap font-bricolageGrotesque text-3xl font-bold leading-[1.26] xl:text-[38px]">#Project Luminosity</a>
+                                <p class="para-lg">
+                                    Comprehensive advertising strategy, contributing to a
+                                    well-rounded and effective marketing campaign.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="group relative overflow-hidden rounded-[10px] transition-all duration-500 hover:flex-grow-[5] lg:flex lg:flex-shrink-0 lg:flex-grow lg:basis-0">
+                        <img src="/static/img/images/th-7/project-img-8.png" alt="project-img-8" width="636" height="550" class="h-[550px] w-full object-cover object-center" />
+
+                        <div class="invisible absolute inset-0 flex items-end bg-gradient-to-t from-[#0B1040] to-[#0B1040]/10 p-5 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 xl:p-10">
+                            <div class="translate-x-10 text-[#F8FCDD] transition-all delay-150 duration-500 group-hover:translate-x-0">
+                                <a href="{{ url_for('portfolioDetails') }}" class="mb-3 block text-wrap font-bricolageGrotesque text-3xl font-bold leading-[1.26] xl:text-[38px]">#InnoVibes Campaign</a>
+                                <p class="para-lg">
+                                    Comprehensive advertising strategy, contributing to a
+                                    well-rounded and effective marketing campaign.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Project List -->
+            </div>
+            <!-- Section Space -->
+        </section>
+        <!-- ...::: Project Section End :::... -->
+
+        <!-- ...::: Team Section Start :::... -->
+        <section class="section-tam">
+            <!-- Section Space -->
+            <div class="section-space-bottom">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Section Block -->
+                    <div class="mb-10 flex flex-wrap items-center justify-between gap-10 md:mb-[60px] lg:mb-20">
+                        <h2 class="jos max-w-[700px] font-bricolageGrotesque text-4xl font-bold leading-[1.033] -tracking-[1px] text-[#0B1040] sm:text-5xl lg:text-6xl xl:text-7xl xxl:text-[90px]">
+                            Talented people of our company
+                        </h2>
+                        <a href="{{ url_for('team') }}" class="group inline-flex rounded border-2 border-[#4659FF] bg-[#4659FF] px-6 py-3 text-base font-bold text-white lg:px-8 lg:py-4 xl:px-[42px]">
+                            <div class="relative flex items-center justify-center overflow-hidden">
+                                <span class="translate-y-0 transition-all duration-300 group-hover:-translate-y-full">Meet All Members</span>
+                                <span class="absolute translate-y-full transition-all duration-300 group-hover:translate-y-0">Meet All Members</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Section Block -->
+
+                    <!-- Team List -->
+                    <ul class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+                        <!-- Team Item -->
+                        <li class="jos" data-jos_animation="flip-left">
+                            <a href="{{ url_for('teamDetails') }}" class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/images/th-7/team-img-1.jpg" alt="team-img-1" width="416" height="450" class="h-auto w-full" />
+                            </a>
+
+                            <div class="mt-4 text-[#0B1040]">
+                                <a href="{{ url_for('teamDetails') }}" class="block font-bricolageGrotesque text-3xl font-bold leading-[1.26] lg:text-[38px]">Adam Smith</a>
+                                <span class="mt-[10px] text-lg leading-[1.42] md:text-xl lg:text-[21px]">Head of Digital Advertising</span>
+                            </div>
+                        </li>
+                        <!-- Team Item -->
+                        <!-- Team Item -->
+                        <li class="jos" data-jos_animation="flip-left">
+                            <a href="{{ url_for('teamDetails') }}" class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/images/th-7/team-img-2.jpg" alt="team-img-2" width="416" height="450" class="h-auto w-full" />
+                            </a>
+
+                            <div class="mt-4 text-[#0B1040]">
+                                <a href="{{ url_for('teamDetails') }}" class="block font-bricolageGrotesque text-3xl font-bold leading-[1.26] lg:text-[38px]">Justine Mark</a>
+                                <span class="mt-[10px] text-lg leading-[1.42] md:text-xl lg:text-[21px]">Commercial Director</span>
+                            </div>
+                        </li>
+                        <!-- Team Item -->
+                        <!-- Team Item -->
+                        <li class="jos" data-jos_animation="flip-left">
+                            <a href="{{ url_for('teamDetails') }}" class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/images/th-7/team-img-3.jpg" alt="team-img-3" width="416" height="450" class="h-auto w-full" />
+                            </a>
+
+                            <div class="mt-4 text-[#0B1040]">
+                                <a href="{{ url_for('teamDetails') }}" class="block font-bricolageGrotesque text-3xl font-bold leading-[1.26] lg:text-[38px]">Robert Harz</a>
+                                <span class="mt-[10px] text-lg leading-[1.42] md:text-xl lg:text-[21px]">Chief Data Officer</span>
+                            </div>
+                        </li>
+                        <!-- Team Item -->
+                    </ul>
+                    <!-- Team List -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Section Space -->
+        </section>
+        <!-- ...::: Team Section End :::... -->
+
+        <!-- ...::: CTA Section Start :::... -->
+        <section class="section-cta">
+            <!-- Section Background -->
+            <div class="relative z-10 bg-[#4659FF]">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container">
+                        <!-- Section Block -->
+                        <div class="mx-auto mb-10 max-w-[856px] text-center md:mb-[60px] lg:mb-20">
+                            <h2 class="font-bricolageGrotesque text-4xl font-bold leading-[1.033] -tracking-[1px] text-[#F8FCDD] sm:text-5xl lg:text-6xl xl:text-7xl xxl:text-[90px]">
+                                We’re trusted advertising agency
+                            </h2>
+                        </div>
+                        <!-- Section Block -->
+
+                        <!-- Testimonial Slider -->
+                        <div class="swiper testimonial-slider-2">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="mx-auto max-w-[996px] text-center text-[#F8FCDD]">
+                                        <img src="/static/img/images/th-7/testimonial-star.png" alt="testimonial-star" class="mx-auto" />
+                                        <blockquote class="my-6 text-xl font-semibold md:text-2xl lg:text-3xl">
+                                            "The team at Masco has an incredible knack for turning
+                                            ideas into visually stunning and compelling campaigns.
+                                            Their creative approach brought a fresh and innovative
+                                            perspective to our brand, resulting in increased
+                                            engagement and brand recognition."
+                                        </blockquote>
+                                        <div>
+                                            <span class="block font-semibold">William Jack </span>
+                                            <span>CEO & Founder @XYZ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="mx-auto max-w-[996px] text-center text-[#F8FCDD]">
+                                        <img src="/static/img/images/th-7/testimonial-star.png" alt="testimonial-star" class="mx-auto" />
+                                        <blockquote class="my-6 text-xl font-semibold md:text-2xl lg:text-3xl">
+                                            "The team at Masco has an incredible knack for turning
+                                            ideas into visually stunning and compelling campaigns.
+                                            Their creative approach brought a fresh and innovative
+                                            perspective to our brand, resulting in increased
+                                            engagement and brand recognition."
+                                        </blockquote>
+                                        <div>
+                                            <span class="block font-semibold">William Jack </span>
+                                            <span>CEO & Founder @XYZ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="mx-auto max-w-[996px] text-center text-[#F8FCDD]">
+                                        <img src="/static/img/images/th-7/testimonial-star.png" alt="testimonial-star" class="mx-auto" />
+                                        <blockquote class="my-6 text-xl font-semibold md:text-2xl lg:text-3xl">
+                                            "The team at Masco has an incredible knack for turning
+                                            ideas into visually stunning and compelling campaigns.
+                                            Their creative approach brought a fresh and innovative
+                                            perspective to our brand, resulting in increased
+                                            engagement and brand recognition."
+                                        </blockquote>
+                                        <div>
+                                            <span class="block font-semibold">William Jack </span>
+                                            <span>CEO & Founder @XYZ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial Slider -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+
+                <!-- Background Element -->
+                <div class="jos absolute right-0 top-0 -z-10 hidden lg:inline-block" data-jos_animation="fade-down">
+                    <img src="/static/img/elemnts/th-7-cta-shape.svg" alt="th-7-cta-shape" width="432" height="471" />
+                </div>
+                <!-- Background Element -->
+            </div>
+            <!-- Section Background -->
+        </section>
+        <!-- ...::: CTA Section End :::... -->
+        </main>
+        <!--  Main Wrapper End -->
+
+        <!-- ...::: Footer Section Start :::... -->
+        <footer class="section-footer">
+        <div class="relative z-10 bg-[#F8FCDD]">
+            <!-- Footer Top -->
+            <div class="section-space">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Section Block -->
+                    <div class="flex flex-wrap items-center justify-between gap-10">
+                        <div class="max-w-[820px]">
+                            <h2 class="font-bricolageGrotesque text-5xl font-bold leading-[1.09] sm:text-6xl md:text-7xl lg:text-[90px]">
+                                Let your brand rise
+                                <span class="relative z-10">
+                                    to new heights
+                                    <img src="/static/img/elemnts/th-7-hero-highlight-mark.svg" alt="th-7-hero-highlight-mark" class="absolute bottom-0 -z-10 w-full" />
+                                </span>
+                            </h2>
+                        </div>
+                        <a href="{{ url_for('pricing') }}" class="group inline-flex rounded border-2 border-[#4659FF] bg-[#4659FF] px-6 py-3 text-base font-bold text-white lg:px-8 lg:py-4 xl:px-[42px]">
+                            <div class="relative flex items-center justify-center overflow-hidden">
+                                <span class="translate-y-0 transition-all duration-300 group-hover:-translate-y-full">Explore Our Plans</span>
+                                <span class="absolute translate-y-full transition-all duration-300 group-hover:translate-y-0">Explore Our Plans</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Section Block -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Footer Top -->
+
+            <!-- Footer Center -->
+            <div class="pb-10 md:pb-[60px] lg:pb-20 xl:pb-[100px]">
+                <!-- Section Container -->
+                <div class="container">
+                    <ul class="flex flex-wrap justify-between gap-10">
+                        <li>
+                            <a href="{{ url_for('index') }}">
+                                <img src="/static/img/logo-black.png" alt="logo-black" />
+                            </a>
+                        </li>
+                        <li class="max-w-[300px]">
+                            <span class="mb-2 font-bricolageGrotesque text-2xl font-bold">Our address:</span>
+                            <address class="text-xl not-italic">
+                                4517 Washington Ave. Manchester, Kentucky 39495
+                            </address>
+                        </li>
+                        <li class="max-w-[163px]">
+                            <span class="mb-2 font-bricolageGrotesque text-2xl font-bold">Give us a call:</span>
+                            <a href="tel:+123-456-7890" class="text-xl">(123) 456-7890</a>
+                            <a href="tel:+088-123-4567" class="text-xl">(088)-123-4567</a>
+                        </li>
+                        <li class="max-w-[211px]">
+                            <span class="mb-2 font-bricolageGrotesque text-2xl font-bold">Send us an email:
+                            </span>
+                            <a href="mailto:info@mthemeus.com">info@mthemeus.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Footer Center -->
+
+            <!-- Horizontal Line -->
+            <div class="horizontal-line bg-[#0B1040]/10"></div>
+            <!-- Horizontal Line -->
+
+            <!-- Footer Bottom -->
+            <div class="py-[35px]">
+                <!-- Section Container -->
+                <div class="container">
+                    <div class="flex flex-col-reverse flex-wrap justify-center gap-x-[30px] gap-y-4 lg:flex-row lg:justify-between">
+                        <!-- Copyright Text -->
+                        <div class="text-center text-colorGondola lg:text-start">
+                            &copy; Copyright 2024, All Rights Reserved by PixcelsThemes
+                        </div>
+                        <!-- Copyright Text -->
+
+                        <!-- Social Link Item -->
+                        <div class="flex justify-center gap-3 lg:justify-normal">
+                            <!-- Social Link Item -->
+                            <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer" class="group flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#0B1040]/10 hover:bg-[#4659FF]">
+                                <img src="/static/img/icons/icon-logo-black-twitter.svg" alt="icon-black-twitter" width="27" height="22" class="h-4 w-auto opacity-100 transition-all duration-300 group-hover:opacity-0" />
+                                <img src="/static/img/icons/icon-orange-twitter.svg" alt="icon-orange-twitter" width="27" height="22" class="absolute h-4 w-auto opacity-0 invert transition-all duration-300 group-hover:opacity-100" />
+                            </a>
+                            <!-- Social Link Item -->
+                            <!-- Social Link Item -->
+                            <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer" class="group flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#0B1040]/10 hover:bg-[#4659FF]">
+                                <img src="/static/img/icons/icon-black-facebook.svg" alt="icon-black-facebook" width="13" height="24" class="h-4 w-auto opacity-100 transition-all duration-300 group-hover:opacity-0" />
+                                <img src="/static/img/icons/icon-orange-facebook.svg" alt="icon-orange-facebook" width="13" height="24" class="absolute h-4 w-auto opacity-0 invert transition-all duration-300 group-hover:opacity-100" />
+                            </a>
+                            <!-- Social Link Item -->
+                            <!-- Social Link Item -->
+                            <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer" class="group flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#0B1040]/10 hover:bg-[#4659FF]">
+                                <img src="/static/img/icons/icon-black-instagram.svg" alt="icon-black-instagram" width="26" height="26" class="h-4 w-auto opacity-100 transition-all duration-300 group-hover:opacity-0" />
+                                <img src="/static/img/icons/icon-orange-instagram.svg" alt="icon-orange-instagram" width="26" height="26" class="absolute h-4 w-auto opacity-0 invert transition-all duration-300 group-hover:opacity-100" />
+                            </a>
+                            <!-- Social Link Item -->
+                            <!-- Social Link Item -->
+                            <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="group flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#0B1040]/10 hover:bg-[#4659FF]">
+                                <img src="/static/img/icons/icon-black-linkedin.svg" alt="icon-black-linkedin" width="26" height="24" class="h-4 w-auto opacity-100 transition-all duration-300 group-hover:opacity-0" />
+                                <img src="/static/img/icons/icon-orange-linkedin.svg" alt="icon-orange-linkedin" width="26" height="24" class="absolute h-4 w-auto opacity-0 invert transition-all duration-300 group-hover:opacity-100" />
+                            </a>
+                            <!-- Social Link Item -->
+                        </div>
+                        <!-- Social Link Item -->
+                    </div>
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Footer Bottom -->
+        </div>
+        </footer>
+
+{% endblock content %}
