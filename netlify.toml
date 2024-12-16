@@ -2,9 +2,7 @@
   command = """
     python -m pip install --upgrade pip &&
     pip install -r requirements.txt &&
-    mkdir -p public &&
-    cp -r templates/* public/ &&
-    cp -r static public/
+    python build.py
   """
   publish = "public"
 
@@ -15,6 +13,7 @@
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
 
 [[headers]]
   for = "/*"
