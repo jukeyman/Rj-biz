@@ -1,0 +1,8 @@
+{
+  "name": "rj-business-solutions-functions",
+  "version": "1.0.0",
+  "description": "Netlify functions for RJ Business Solutions website",
+  "dependencies": {
+    "@netlify/functions": "^1.6.0"
+  }
+} 
